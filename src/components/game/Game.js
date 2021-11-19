@@ -4,12 +4,13 @@ import Board from "./Board/Board.js";
 
 
   const Game = (props) => {
-    const { item, onClick } = props;
+    const { board, handleClick } = props;
   
     return (
-      <Grid container spacing={3}> 
-        <Board />
-      </Grid>
+      <div style={{backgroundColor:"white", border: "3"}}>
+          <h1>Board 1</h1>
+          <Board itemRows={board} handleClick={handleClick}/>
+      </div>
     );
   };
   
