@@ -1,4 +1,4 @@
-
+import FormInputPopup from "./popup/FormInputPopup";
 
 
 
@@ -12,6 +12,8 @@ const TopSection = (props) => {
         <button onClick={newBoardFun}>
             Create a New Game
         </button>
+
+        <FormInputPopup />
 
     </div>
   );
