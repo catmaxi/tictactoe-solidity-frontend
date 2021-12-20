@@ -4,7 +4,7 @@ import Board from "./Board/Board.js";
 
 
   const Game = (props) => {
-    const { board, handleClick } = props;
+    const { board, handleClick, gameId, setGameId, playerId } = props;
   
     return (
       <div style={{backgroundColor:"white", border: "3"}}>

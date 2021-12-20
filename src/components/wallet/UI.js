@@ -1,12 +1,13 @@
 import { useWeb3React } from "@web3-react/core"
 import { injected } from "./Connectors"
 
-function WalletUI() {
+function WalletUI({walletActive, setWalletActive}) {
   const { active, account, library, connector, activate, deactivate } = useWeb3React()
 
   async function connect() {
     try {
       await activate(injected)
+      setWalletActive(true)
     } catch (ex) {
       console.log(ex)
     }
@@ -15,6 +16,7 @@ function WalletUI() {
   async function disconnect() {
     try {
       deactivate()
+      setWalletActive(false)
     } catch (ex) {
       console.log(ex)
     }
