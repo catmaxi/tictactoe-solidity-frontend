@@ -231,8 +231,6 @@ function Web3App() {
     const interval = setInterval(() => {
       console.log("This will run every", renderBoardTime, "second!");
       count.current++;
-
-
       console.log("active", active, gameId);
       getBoardFromContract(gameId).then((res) => {
         // console.log("res", res);
