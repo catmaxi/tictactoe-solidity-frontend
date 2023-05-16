@@ -1,6 +1,6 @@
 import contractabi from "./contractabi.js";
 
-let contractAddress = "0x1606c11Aa7d5eE9278256151E075055f120160F5";
+let contractAddress = "0x29De50164DeCd3EE6d0c6a886024990538c8d47D";
 
 
 function getContract(web3) {
